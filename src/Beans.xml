@@ -15,7 +15,7 @@
 	<bean id="textEditor" class="com.dileep.TextEditor">
 	</bean>
 
-	<bean id="SpellChecker" class="com.dileep.SpellChecker">
+	<bean id="spellChecker" class="com.dileep.SpellChecker">
 	</bean>
 
 	<bean id="profile" class="com.dileep.Profile">
@@ -29,6 +29,10 @@
 	<bean id="student2" class="com.dileep.Student">
 		<property name="name" value="Shane"></property>
 		<property name="age" value="25"></property>
+	</bean>
+
+	<bean id="helloWorld" class="com.dileep.HelloWorld">
+		<property name="message" value="Hello World!"></property>
 	</bean>
 
 </beans>

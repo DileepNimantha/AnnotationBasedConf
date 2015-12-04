@@ -1,5 +1,7 @@
 package com.dileep;
 
+//import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class TextEditor {
@@ -10,6 +12,7 @@ public class TextEditor {
 	}
 
 	@Autowired
+//	@Resource(name = "spellChecker")
 	public void setSpellChecker(SpellChecker spellChecker) {
 		this.spellChecker = spellChecker;
 	}

@@ -1,6 +1,7 @@
 package com.dileep;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
@@ -10,6 +11,7 @@ public class MainApp {
 		demoRequiredAnnotation();
 		demoAutowiredAnnotation();
 		demoQualifierAnnotation();
+		demoJSR250Annotation();
 	}
 
 	public static void demoRequiredAnnotation() {
@@ -34,4 +36,12 @@ public class MainApp {
 		profile.printAge();
 		profile.printName();
 	}
+
+	private static void demoJSR250Annotation() {
+		System.out.println("\nDemo JSR-250 annotation");
+		HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+		obj.getMessage();
+		((AbstractApplicationContext) context).registerShutdownHook();
+	}
+
 }
