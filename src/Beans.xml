@@ -12,4 +12,23 @@
 		<property name="age" value="26"></property>
 	</bean>
 
+	<bean id="textEditor" class="com.dileep.TextEditor">
+	</bean>
+
+	<bean id="SpellChecker" class="com.dileep.SpellChecker">
+	</bean>
+
+	<bean id="profile" class="com.dileep.Profile">
+	</bean>
+
+	<bean id="student1" class="com.dileep.Student">
+		<property name="name" value="Dileep"></property>
+		<property name="age" value="26"></property>
+	</bean>
+
+	<bean id="student2" class="com.dileep.Student">
+		<property name="name" value="Shane"></property>
+		<property name="age" value="25"></property>
+	</bean>
+
 </beans>
